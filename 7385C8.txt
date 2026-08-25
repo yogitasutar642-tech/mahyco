@@ -1,0 +1,51 @@
+{
+"wifi": [
+ {
+ "ssid": "SM-0SU4-4G",
+ "password": "22042026-4"
+ }
+ ],
+
+"deviceid": {
+ "id": "D053"
+ },
+
+"mqtt": {
+ "enable": true,
+ "url"  : "mqtts://192.168.21.85:8883",
+ "topics" : {
+ "data"  : "SU4/A0:F2:62:e1:9F:60/DATA",
+ "heartbeat" : "SU4/A0:F2:62:e1:9F:60/HB",
+ "otalog" : "SU4/A0:F2:62:e1:9F:60/OTA",
+ "sysinfo" : "SU4/A0:F2:62:e1:9F:60/SYSINFO",
+ "lostdata" : "SU4/A0:F2:62:e1:9F:60/LOSTDATA"
+ }
+ },
+
+"jsonfileversion": {
+ "v": "V1.1"
+ },
+
+"github_json_download": {
+ "url": "https://raw.githubusercontent.com/amit-sectr/MAHYCO/refs/heads/main/Storage-Unit-4/JSON/",
+ "interval_min": 10
+ },
+
+
+"delay":{
+ "heartbeat": 30000,
+ "datareport": 2000
+ },
+
+"localserverota":{
+ "localserverotatime":"1100,1",
+ "localserverotaurl":"https://192.168.21.85/ota/version.json"
+ },
+
+"githubota": {
+  "GITHUB_OTA_JSON_URL":"https://raw.githubusercontent.com/amit-sectr/MAHYCO/refs/heads/main/Storage-Unit-4/JSON/ota.json",
+  "GITHUB_ROLLBACK_JSON": "https://raw.githubusercontent.com/Shreyakadam1/test-repo/refs/heads/main/rollback.json",
+ "GITHUB_ROLLBACK_FIRMWARE": "https://github.com/Shreyakadam1/test-repo/releases/download/%s/app-template.bin",
+  "OTATime":"1230,1"
+  }
+ }
